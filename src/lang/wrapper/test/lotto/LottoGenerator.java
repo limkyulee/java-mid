@@ -14,7 +14,7 @@ public class LottoGenerator {
         while(counter < 6) {
             int lotto = random.nextInt(44) + 1;
 
-            if(isValidPassed(lottoNumbers, lotto)){
+            if(isUnique(lottoNumbers, lotto)){
                 lottoNumbers[counter] = lotto;
                 counter++;
             }
@@ -23,7 +23,7 @@ public class LottoGenerator {
         return lottoNumbers;
     };
 
-    private boolean isValidPassed(int[] validArr, int target){
+    private boolean isUnique(int[] validArr, int target){
       for(int i = 0; i < counter; i++){
           if(validArr[i] == target){
               return false;
