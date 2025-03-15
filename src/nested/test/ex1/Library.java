@@ -14,12 +14,24 @@ public class Library {
     }
 
     public void addBook(String title, String author) {
-        if(numOfBooks < books.length) {
-            books[numOfBooks] = new Book(title, author);
-            numOfBooks++;
-        }else {
+//      FIXME : 정답 로직
+//      REFACTOR : 검증 로직 처리 후, 정상 로직 처리
+        if(numOfBooks >= books.length) {
             System.out.println("도서관 저장 공간이 부족합니다.");
+
+            return;
         }
+
+//      정상 로직
+        books[numOfBooks++] = new Book(title, author);
+
+//        FIXME : 내가 작성한 로직
+//        if(numOfBooks < books.length) {
+//            books[numOfBooks] = new Book(title, author);
+//            numOfBooks++;
+//        }else {
+//            System.out.println("도서관 저장 공간이 부족합니다.");
+//        }
     }
 
     public void showBooks(){
@@ -29,7 +41,7 @@ public class Library {
         }
     }
 
-    static class Book {
+    private static class Book {
         String title;
         String author;
 
