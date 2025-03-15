@@ -1,0 +1,14 @@
+package nested.test;
+
+//  Q : 지역 클래스를 완성하라.
+public class OuterClass3 {
+    public void myMethod(){
+        class LocalClass{
+            public void hello(){
+                System.out.println("hello");
+            }
+        }
+
+        new LocalClass().hello();
+    }
+}
