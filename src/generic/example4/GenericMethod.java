@@ -11,7 +11,7 @@ public class GenericMethod {
         return t;
     }
 
-//  PLUS : generic 메서드도 generic 타입과 마찬가지로 타입 매개변수를 제한 가능.
+//  PLUS : 제네릭 메서드도 제네릭 타입과 마찬가지로 타입 매개변수를 제한 가능.
     public static <T extends Number> T numberMethod(T t){
         System.out.println("bound Method : " + t);
         return t;

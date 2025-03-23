@@ -3,7 +3,7 @@ package generic.example3;
 import generic.animal.Cat;
 import generic.animal.Dog;
 
-//  REFACTOR : generic 에 타입 매개변수 상한을 사용.
+//  REFACTOR : 제네릭에 타입 매개변수 상한을 사용.
 //    > 타입 안정성 유지, 타입이 원하는 기능 사용 가능(코드 재사용성 증가).
 public class AnimalHospitalMainV3 {
     public static void main(String[] args) {

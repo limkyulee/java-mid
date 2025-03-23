@@ -10,7 +10,7 @@ public class AnimalMain2 {
         Dog dog = new Dog("멍멍이", 100);
         Cat cat = new Cat("냐옹이", 50);
 
-//      PLUS : Generic 이라고 하더라도 부모 타입을 지정하면 자식 타입의 값도 대입 가능하다.
+//      PLUS : Generic(제네릭) 이라고 하더라도 부모 타입을 지정하면 자식 타입의 값도 대입 가능하다.
         Box<Animal> animalBox = new Box<>();
         animalBox.set(animal);
         animalBox.set(dog);

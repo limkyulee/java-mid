@@ -1,7 +1,7 @@
 package generic.example1;
 
 public class BoxMain3 {
-//  REFACTOR : Generic 의 사용
+//  REFACTOR : Generic(제네릭) 의 사용
 //    > 코드 재사용 및 타입 안정성 유지 가능.
 //    > 타입 매개변수(<T>)에 타입 인자(ex | <Integer> - Integer)를 전달하여 사용.
     public static void main(String[] args) {
