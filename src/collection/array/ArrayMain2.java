@@ -2,10 +2,14 @@ package collection.array;
 
 import java.util.Arrays;
 
+//  PLUS : 배열 | 순서가 있고 중복을 허용하지만 크기가 정적으로 고정.
+//       : 리스트 | 순서가 있고 중복을 허용하지만 크기가 동적으로 변할 수 있음.
+
 //  LIMIT : 배열의 한계
 //    > 배열의 크기를 배열을 생성하는 시점에 미리 정해야 함.
+
 //  Q | 배열처럼 처음부터 정저긍로 길이가 정해져있는 것이 아니라, 동적으로 언제든지 길이를 조정할 수 있는 자료구조가 있을까?
-//  A | "List 자료구조"
+//  A | "List 자료구조" (배열보다 유연한 자료 구조)
 public class ArrayMain2 {
     public static void main(String[] args) {
         int[] arr = new int[5];
