@@ -8,9 +8,7 @@ import java.util.TreeSet;
 //    : 데이터의 값 순서로 출력하라. ex) 10,20,30
 public class UniqueNameTest3 {
     public static void main(String[] args) {
-        Integer[] inputArr = {30,20,20,10,10};
-
-        Set<Integer> set = new TreeSet<>(List.of(inputArr));
+        Set<Integer> set = new TreeSet<>(List.of(30,20,20,10,10));
         for (Integer i : set) {
             System.out.println(i);
         }
