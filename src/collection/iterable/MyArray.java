@@ -2,9 +2,12 @@ package collection.iterable;
 
 import java.util.Iterator;
 
-// implements Iterable<> : 인터페이스
-//    > 자료구조에 사용할 반복자(Iterator) 를 반환하면 됨.
-//    > 순회의 대상이 되는 자료 구조로 만들 수 있음. (반복할 수 있음을 의미)
+/**
+ * Iterable(반복가능한)/Iterator(반복자)
+ * 특정 자료구조가 Iterable, Iterator 를 구현하면,
+ * 해당 자료구조를 단순히 hasNext(), next(), for-each 문을 사용하여 순회할 수 있음.
+ */
+
 public class MyArray implements Iterable<Integer> {
 
     private int[] numbers;
@@ -13,7 +16,7 @@ public class MyArray implements Iterable<Integer> {
         this.numbers = numbers;
     }
 
-//  PLUS : 반복자를 반환.
+//  PLUS : 특정 자료구조가 해당 반복자를 반환.
     @Override
     public Iterator<Integer> iterator() {
         return new MyArrayIterator(numbers);
